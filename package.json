@@ -4,7 +4,10 @@
   "description": "This is repository for project, where you will see how many in percents wasted (or I hope been a while) this year.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "prettier": "prettier ./src --write --ignore-unknown",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "jest": "^29.7.0",
-    "react": "^19.0.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
@@ -24,6 +28,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "sass": "^1.83.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
     "vite": "^6.0.7"
   }

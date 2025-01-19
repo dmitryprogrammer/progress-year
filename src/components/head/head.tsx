@@ -6,6 +6,7 @@ const Title = styled.h1`
 
 const HeadWrapper = styled.div`
   width: 100%;
+  padding: 20px;
   display: flex;
   justify-content: center;
 `;

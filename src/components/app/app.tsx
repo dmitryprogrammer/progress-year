@@ -1,4 +1,4 @@
-import { Head } from "../head/head";
+import {Head} from "../head/head";
 
 export function App() {
   return (

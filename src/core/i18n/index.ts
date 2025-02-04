@@ -14,6 +14,9 @@ i18n
   .use(initReactI18next)
   .init({
     lng: LANGUAGES.RU,
+    backend: {
+      loadPath: "/src/assets/i18n/{{lng}}/translation.json",
+    },
     supportedLngs: SUPPORTED_LANGUAGES,
     interpolation: {escapeValue: false},
   });

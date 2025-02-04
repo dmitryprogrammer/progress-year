@@ -1,3 +1,4 @@
+import {useTranslation} from "react-i18next";
 import {styled} from "styled-components";
 
 const Title = styled.h1`
@@ -11,8 +12,11 @@ const HeadWrapper = styled.div`
   justify-content: center;
 `;
 
-export const Head = () => (
-  <HeadWrapper>
-    <Title>Progress year</Title>
-  </HeadWrapper>
-);
+export const Head = () => {
+  const {t} = useTranslation();
+  return (
+    <HeadWrapper>
+      <Title>{t("title")}</Title>
+    </HeadWrapper>
+  );
+};

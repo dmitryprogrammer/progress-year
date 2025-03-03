@@ -12,10 +12,16 @@
     "lib": ["ES6", "DOM"],
     "allowJs": false,
     "noImplicitAny": true,
+    "baseUrl": "./",
     "outDir": "dist",
     "rootDir": "src",
     "strict": false,
     "esModuleInterop": false,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "assets": ["./src/assets/*"],
+      "core": ["./src/core/*"],
+      "components": ["./src/components/*"]
+    }
   }
 }

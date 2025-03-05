@@ -1,18 +1,9 @@
-import {styled} from "styled-components";
+import {LangSwitchBtns} from "@core/i18n/components/lang-switch-btns/lang-switch-btns";
 
-const Title = styled.h1`
-  text-decoration: underline;
-`;
-
-const HeadWrapper = styled.div`
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-`;
-
-export const Head = () => (
-  <HeadWrapper>
-    <Title>Progress year</Title>
-  </HeadWrapper>
-);
+export const Head = () => {
+  return (
+    <header className="header">
+      <LangSwitchBtns />
+    </header>
+  );
+};

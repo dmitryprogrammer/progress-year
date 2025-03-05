@@ -22,6 +22,7 @@ export function LangSwitchBtns() {
   return (
     <>
       <Radio.Group
+        className="lang-switch-btns"
         value={currentLanguage}
         onChange={(event) => switchLanguage(event.target.value)}
         options={languagesButtonNames}

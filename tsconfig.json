@@ -21,7 +21,8 @@
     "paths": {
       "@assets/*": ["./src/assets/*"],
       "@core/*": ["./src/core/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@containers/*": ["./src/containers/*"]
     }
   }
 }

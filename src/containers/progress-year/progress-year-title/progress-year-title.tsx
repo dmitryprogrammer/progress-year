@@ -1,6 +1,15 @@
 import {useTranslation} from "react-i18next";
 
-export function ProgressYearTitle() {
+export function ProgressYearTitle({
+  yearGonePercents,
+}: {
+  yearGonePercents: number;
+}) {
   const {t} = useTranslation();
-  return <h1>{t("progressYearTitle", {percent: 30})}</h1>;
+
+  if (yearGonePercents) {
+    return <h1>{t("progressYearTitle", {percent: yearGonePercents})}</h1>;
+  }
+
+  return <h1>{t("progressYearError")}</h1>;
 }

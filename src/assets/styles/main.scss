@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
 }
+html {
+  min-height: 100%;
+}
 
 body {
-  background-image: url("https://wallscloud.net/img/resize/1280/1024/MM/2025-01-27-the-boat-on-the-water-1-65391.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+    0deg,
+    rgba(195, 104, 34, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .header {

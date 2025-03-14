@@ -1,5 +1,7 @@
 .progress-year-container {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

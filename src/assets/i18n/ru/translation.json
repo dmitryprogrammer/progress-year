@@ -1,3 +1,4 @@
 {
-  "progressYearTitle": "Твой год прошёл на {{percent}}%"
+  "progressYearTitle": "Твой год прошёл на {{percent}}%",
+  "progressYearError": "Произошла ошибка при получении данных"
 }

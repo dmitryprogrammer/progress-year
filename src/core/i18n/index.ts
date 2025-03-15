@@ -15,7 +15,7 @@ i18n
   .init({
     lng: LANGUAGES.RU,
     backend: {
-      loadPath: "/src/assets/i18n/{{lng}}/translation.json",
+      loadPath: "../assets/i18n/{{lng}}/translation.json",
     },
     supportedLngs: SUPPORTED_LANGUAGES,
     interpolation: {escapeValue: false},

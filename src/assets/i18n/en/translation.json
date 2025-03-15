@@ -1,3 +1,4 @@
 {
-  "progressYearTitle": "Your year is gone by {{percent}}%"
+  "progressYearTitle": "Your year is gone by {{percent}}%",
+  "progressYearError": "Oops! Something went wrong. Please, try again"
 }

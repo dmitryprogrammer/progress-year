@@ -2,9 +2,9 @@ import {ProgressYearContainer} from "@containers/progress-year/progress-year-con
 import {Head} from "../head/head";
 export function App() {
   return (
-    <main>
+    <div className="main">
       <Head />
       <ProgressYearContainer />
-    </main>
+    </div>
   );
 }

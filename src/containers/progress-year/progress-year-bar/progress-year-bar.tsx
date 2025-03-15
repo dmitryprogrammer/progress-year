@@ -1,3 +1,4 @@
+import {Progress} from "antd";
 import {useTranslation} from "react-i18next";
 
 export function ProgressYearBar({
@@ -8,7 +9,15 @@ export function ProgressYearBar({
   const {t} = useTranslation();
 
   if (yearGonePercents) {
-    return <div>hey</div>;
+    return (
+      <Progress
+        percent={yearGonePercents}
+        steps={0}
+        className="progress-year-bar"
+        size={[null, 50]}
+        showInfo={false}
+      />
+    );
   }
 
   return <div>{t("progressYearError")}</div>;

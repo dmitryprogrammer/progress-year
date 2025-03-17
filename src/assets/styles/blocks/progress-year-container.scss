@@ -9,3 +9,10 @@
 .progress-year-bar {
   width: 100%;
 }
+
+.progress-year-title {
+  font-size: 2em;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
+  }
+}

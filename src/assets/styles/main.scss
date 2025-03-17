@@ -37,4 +37,9 @@ body {
 .main {
   margin: 0 auto;
   width: 1280px;
+  padding: 10px;
+
+  @media screen and (max-width: 1280px) {
+    width: 100%;
+  }
 }

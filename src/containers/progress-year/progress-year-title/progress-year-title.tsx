@@ -8,8 +8,12 @@ export function ProgressYearTitle({
   const {t} = useTranslation();
 
   if (yearGonePercents) {
-    return <h1>{t("progressYearTitle", {percent: yearGonePercents})}</h1>;
+    return (
+      <h1 className="progress-year-title">
+        {t("progressYearTitle", {percent: yearGonePercents})}
+      </h1>
+    );
   }
 
-  return <h1>{t("progressYearError")}</h1>;
+  return <h1 className="progress-year-title">{t("progressYearError")}</h1>;
 }

@@ -5,6 +5,12 @@ export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   {
-    ignores: ["dist/*", "jest.config.js", "server/*"],
+    ignores: [
+      "dist/*",
+      "assets/*",
+      "jest.config.js",
+      "node_modules/*",
+      "server/*",
+    ],
   },
 );

@@ -9,6 +9,12 @@ export enum LANGUAGES {
 
 export const SUPPORTED_LANGUAGES = [LANGUAGES.RU, LANGUAGES.EN];
 
+export function detectDefaultLanguage(): LANGUAGES {
+  const systemLocale = Intl.DateTimeFormat().resolvedOptions().locale;
+
+  return systemLocale.indexOf("ru") >= 0 ? LANGUAGES.RU : LANGUAGES.EN;
+}
+
 i18n
   .use(I18NextHttpBackend)
   .use(initReactI18next)

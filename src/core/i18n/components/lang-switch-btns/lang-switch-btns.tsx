@@ -1,5 +1,5 @@
 import {useTranslation} from "react-i18next";
-import {LANGUAGES} from "../..";
+import {detectDefaultLanguage, LANGUAGES} from "../..";
 import {useState} from "react";
 import {Radio} from "antd";
 
@@ -10,7 +10,7 @@ export function LangSwitchBtns() {
       value: lang,
     })),
   );
-  const [currentLanguage, setCurrentLanguage] = useState(LANGUAGES.RU);
+  const [currentLanguage, setCurrentLanguage] = useState(detectDefaultLanguage);
 
   const {i18n} = useTranslation();
 

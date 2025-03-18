@@ -19,7 +19,7 @@ i18n
   .use(I18NextHttpBackend)
   .use(initReactI18next)
   .init({
-    lng: LANGUAGES.RU,
+    lng: detectDefaultLanguage(),
     backend: {
       loadPath: "../assets/i18n/{{lng}}/translation.json",
     },
